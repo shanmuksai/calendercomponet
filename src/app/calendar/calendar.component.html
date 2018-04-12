@@ -1,0 +1,40 @@
+
+  <div class="grid-container-strip-selector">
+                
+          <button (click)="prevMonth()" class="button">&lt;</button>
+          <div >{{ currentDate.format('MMMM') }}</div>
+          <button (click)="nextMonth()" class="button">&gt;</button>
+         
+          <button (click)="prevYear()" class="button">&lt;</button>
+          <div>{{ currentDate.format('YYYY') }}</div>
+          <button (click)="nextYear()" class="button">&gt;</button>
+
+        </div>
+        <br>
+
+
+        
+<div [ngClass]="[halfstarcss===undefined ?'grid-container': halfstarcss]">
+    
+            <div class="grid-item-daynames">S</div>
+            <div class="grid-item-daynames">M</div>
+            <div class="grid-item-daynames">T</div>  
+            <div class="grid-item-daynames">W</div>
+            <div class="grid-item-daynames">TH</div>
+            <div class="grid-item-daynames">F</div>  
+            <div class="grid-item-daynames">SA</div>
+   
+            <div *ngFor="let day of  nullValues"  >                                
+                   <div class="grid-item-lowopacity"> &nbsp; </div>                         
+            </div>
+            <div *ngFor="let day of storedDates"  >            
+                
+            
+                
+                <div (click)="Date(day)"  [ngClass]="isSelected(day)" >{{day.date()}} </div>                         
+            </div>
+     
+</div> 
+
+
+

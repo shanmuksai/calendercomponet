@@ -1,0 +1,89 @@
+
+.grid-container {
+  border: 10px;
+    display: grid;
+    grid-column-gap: 7px;
+    grid-row-gap:7px;
+  padding-top: 50px;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px ;
+    --margin-top: 500px;
+    --background-color: #2196F3;
+    --border-radius: 15px 15px 15px 15px;
+    display: inline-grid;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    
+  }
+  .grid-container-strip-dates {
+    display: grid;
+    grid-column-gap: 7px;
+    grid-row-gap:7px;
+    margin-left: 100px;
+  padding-top: 30px;
+    grid-template-columns: 180px 180px   ;
+   text-align: left;
+    --background-color: #2196F3;
+    --border-radius: 15px 15px 0px 0px;
+    display: inline-grid;
+    padding: 5px;
+    }  
+.grid-container-strip-selector {
+  display: grid;
+  grid-column-gap: 7px;
+  grid-row-gap:7px;
+  margin-left: 40px;
+padding-top: 30px;
+  grid-template-columns: 70px 70px 70px 70px 70px 70px  ;
+ text-align: center;
+  --background-color: #2196F3;
+  --border-radius: 0px 0px 0px 0px;
+  display: inline-grid;
+  padding: 5px;
+  }
+
+
+  .grid-item-daynames {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 15px;
+    glyph-orientation-horizontal: 0grad;
+    text-align: center;
+    --border-radius: 50px 20px 20px 50px;
+  }
+  .grid-item-days-selected{
+    background-color: rgba(206, 206, 206, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    --border-radius: 20px 50px 50px 20px;
+  }
+  .grid-item-days{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    --border-radius: 20px 50px 50px 20px;
+  }
+  .grid-item-lowopacity{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    --border-radius: 20px 50px 50px 20px;
+    opacity:0.5 ;
+  }
+  .button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    --color: rgb(4, 0, 255);
+    padding: 1px 2px;
+    text-align: center;
+    
+   
+    display: inline-block;
+    font-size: 16px;
+}
